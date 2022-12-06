@@ -1,0 +1,122 @@
+/* This is where the media queries styling will go */
+
+@media screen and (min-width: 370px) {
+  .flex-img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .gallery-img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+/* Screen Size: Tablet-portrait*/
+
+@media screen and (min-width: 760px) {
+  /* General */
+  header {
+    padding: 6.4rem 4.8rem 0 4.8rem;
+  }
+
+  section {
+    padding: 6.4rem 4.8rem;
+  }
+
+  /* Header */
+
+  .header-heading {
+    font-size: 4.2rem;
+  }
+
+  .nav-container {
+    margin-top: 6.4rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .nav-item {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+
+  /* What We Do */
+
+  .prim-heading {
+    font-weight: 800;
+    font-size: 3.6rem;
+    margin-bottom: 4rem;
+  }
+
+  .prim-paragraph {
+    font-weight: 400;
+    font-size: 2rem;
+
+    margin-bottom: 3.2rem;
+  }
+
+  .img-container {
+    margin-bottom: 4.8rem;
+  }
+
+  .flex-img {
+    width: 500px;
+    height: 500px;
+  }
+
+  /* Gallery */
+  .gallery-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery-img {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+/* Screen Size: Tablet - landscape && small laptops */
+@media screen and (min-width: 900px) {
+  header {
+    padding: 6.4rem 5.6rem 0 5.6rem;
+  }
+
+  section {
+    padding: 6.4rem 5.6rem;
+  }
+
+  .gallery-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery-img {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+/* Screen Size: Regular Laptop  */
+@media screen and (min-width: 1200px) {
+  .header-heading {
+    font-size: 6rem;
+  }
+
+  .nav-menu {
+    justify-content: center;
+    gap: 9rem;
+  }
+
+  .gallery-img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+/* Screen Size: Desktop */
+
+@media screen and (min-width: 1400px) {
+  .gallery-grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 4rem;
+  }
+}

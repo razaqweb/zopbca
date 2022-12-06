@@ -1,0 +1,112 @@
+/* For simple reading, this css file will be split into sections */
+/* ***this is a MOBILE FIRST DESIGN. Media queries for larger screens */
+
+/* ///////////////// Generals and Overall Layout Styling /////////////// */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fa5d82;
+}
+
+html {
+  /* This font-size of 62.5% allows me to use 'rem' font-size easily for other selectors where 1rem = 10px. So, with this, 1.2rem is 12px. Helps with responsiveness */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #fa5d82;
+  font-weight: 400;
+  /* font-size: 1.2rem; */
+}
+
+header {
+  padding: 4.2rem 3rem 0 3rem;
+}
+
+section {
+  padding: 4.2rem 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header Section */
+
+.header-heading {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.nav-container {
+  margin-top: 4.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-item {
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.6px;
+}
+
+/* What we Do */
+
+.flex-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2.4rem;
+}
+
+.prim-heading {
+  font-weight: 800;
+  font-size: 3rem;
+  margin-bottom: 2.4rem;
+}
+
+.prim-paragraph {
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.5;
+}
+
+.img-container {
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 2.4rem;
+}
+
+.flex-img {
+  width: 200px;
+  height: 200px;
+}
+
+/* Gallery */
+
+.gallery-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-img {
+  height: 120px;
+  width: 120px;
+}
